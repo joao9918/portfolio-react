@@ -1,6 +1,6 @@
-"use client";
+import AboutMe from "@/components/AboutMe";
 import Card from "@/components/Card";
-import ContainerCard from "@/components/ContainerCard";
+import Container from "@/components/Container";
 import Section from "@/components/Section";
 
 export default function En() {
@@ -10,7 +10,7 @@ export default function En() {
       <Section />
 
       {/* PROJECTS */}
-      <ContainerCard title="My Projects">
+      <Container title="My Projects">
         <Card
           title="Chronos Pomodoro"
           description="Virtual Store complete with carrinho, payment and administrator panel."
@@ -35,11 +35,47 @@ export default function En() {
         <Card
           title="BMW"
           description="Painel com gráficos dinâmicos e consumo de API REST."
-          image="stranger-things.png"
+          image="project-bmw.png"
           githubUrl="#"
           liveUrl="#"
         />
-      </ContainerCard>
+      </Container>
+
+      <Container title="About Me" id="about-me" gridCols={"md:grid-cols-1"}>
+        <AboutMe />
+      </Container>
+      <svg
+        viewBox="0 0 1441 293"
+        className="w-full h-auto hidden lg:block relative top-1"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        {/* Shape principal */}
+        <path
+          fill="url(#a)"
+          d="M285 84C216 2 157-18 0 15l1 277h1440v-48c-108-87-182-93-330-51-112 21-190 12-363-52-94-39-149-21-248 38-76 28-121 20-215-95"
+        />
+
+        {/* Linha esquerda */}
+        <path d="M1 20 L1 292" stroke="#8b2ef5" strokeWidth="2" />
+
+        <defs>
+          <linearGradient
+            id="a"
+            x1="0"
+            x2="1441"
+            y1="146"
+            y2="140"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stopColor="#8b2ef5" />
+            <stop offset="1" stopColor="#0b0f1a" />
+          </linearGradient>
+        </defs>
+      </svg>
+
+      <footer className="relative w-screen h-screen bg-[linear-gradient(90deg,#8B2EF5_0%,#0B0F1A_100%)]">
+        awda
+      </footer>
     </main>
   );
 }

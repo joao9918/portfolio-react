@@ -15,12 +15,19 @@ export default function Section() {
     sectionRef.current?.style.setProperty("--y", `${y}%`);
   };
 
+  function scrollToAbout(id: string) {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
   return (
     <section
       ref={sectionRef}
       onMouseMove={handleMouseMove}
       style={{ "--x": "50%", "--y": "50%" } as React.CSSProperties}
-      className="relative min-h-140 lg:min-h-215 flex flex-col justify-center items-center text-center px-6 overflow-hidden bg-[#0b0f1a] text-white"
+      className="relative min-h-140 lg:min-h-266 flex flex-col justify-center items-center text-center px-6 overflow-hidden bg-[#0b0f1a] text-white"
     >
       {/* Glow Effect - Corrigido */}
       <div
@@ -43,7 +50,10 @@ export default function Section() {
       </p>
 
       <div className="relative z-10 mt-8 flex gap-4 flex-wrap justify-center">
-        <button className="cursor-pointer px-6 py-3 rounded-full font-medium transition hover:-translate-y-1 bg-linear-to-r from-blue-500 to-purple-600">
+        <button
+          onClick={() => scrollToAbout("about-me")}
+          className="cursor-pointer px-6 py-3 rounded-full font-medium transition hover:-translate-y-1 bg-linear-to-r from-blue-500 to-purple-600"
+        >
           About Me
         </button>
 

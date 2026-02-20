@@ -24,84 +24,76 @@ export default function Card({
         "overflow-hidden",
         "border",
         "border-white/10",
+        "bg-[#161b22]",
         "transition-all",
         "duration-500",
         "hover:-translate-y-2",
-        "hover:border-white/20",
+        "hover:border-blue-500/50",
+        "hover:shadow-[0_20px_40px_rgba(0000.4)0_0_20px_rgba(591302460.2)]",
       )}
     >
-      {/* Imagem */}
+      {/* Imagem com Zoom Suave */}
       <div
-        className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-        style={{
-          backgroundImage: `url(/${image})`,
-        }}
+        className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
+        style={{ backgroundImage: `url(/${image})` }}
       />
 
-      {/* Overlay gradient mais elegante */}
-      <div
-        className={clsx(
-          "absolute",
-          "inset-0",
-          "bg-linear-to-t",
-          "from-black/80",
-          "via-black/40",
-          "to-transparent",
-        )}
-      />
+      {/* Overlay de Gradiente Dinâmico */}
+      <div className="absolute inset-0 bg-linear-to-t from-[#0b0f1a] via-[#0b0f1a]/40 to-transparent opacity-80 transition-opacity group-hover:opacity-90" />
 
-      {/* Conteúdo */}
-      <div className="backdrop-brightness-90 backdrop-opacity-100 group-hover:backdrop-brightness-100 transition relative p-6 flex flex-col justify-end h-full aspect-video">
-        <div>
-          <h3 className="text-xl font-semibold text-white mb-2">{title}</h3>
-
-          <p className="text-sm none hidden sm:block text-white/70 mb-6">
+      {/* Conteúdo com Glassmorphism */}
+      <div className="relative p-8 flex flex-col justify-end h-full aspect-16/10 z-10">
+        <div className="translate-y-4 transition-transform duration-500 group-hover:translate-y-0">
+          <h3 className="text-2xl font-bold text-white mb-3">{title}</h3>
+          <p className="text-sm text-gray-300 mb-8 line-clamp-2 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
             {description}
           </p>
         </div>
 
-        <div className="flex gap-3">
+        {/* Botões Estilizados */}
+        <div className="flex gap-4 opacity-0 translate-y-4 transition-all duration-500 delay-100 group-hover:opacity-100 group-hover:translate-y-0">
           <a
             href={githubUrl}
             target="_blank"
             className={clsx(
               "flex-1",
               "text-center",
-              "py-2",
-              "rounded-full",
+              "py-2.5",
+              "rounded-xl",
               "border",
-              "border-white/30",
+              "border-white/20",
               "text-sm",
+              "font-medium",
               "text-white",
               "backdrop-blur-md",
-              "bg-white/10",
+              "bg-white/5",
               "transition-all",
-              "duration-300",
-              "hover:bg-white/20",
+              "hover:bg-white/10",
+              "hover:border-white/40",
             )}
           >
             GitHub
           </a>
-
           <a
             href={liveUrl}
             target="_blank"
             className={clsx(
               "flex-1",
               "text-center",
-              "py-2",
-              "rounded-full",
+              "py-2.5",
+              "rounded-xl",
               "text-sm",
+              "font-bold",
               "text-white",
               "bg-linear-to-r",
-              "from-blue-500",
+              "from-blue-600",
               "to-purple-600",
               "transition-all",
-              "duration-300",
-              "hover:brightness-90",
+              "hover:brightness-110",
+              "hover:shadow-[0_0_15px_rgba(591302460.5)]",
             )}
           >
-            Site
+            Live Demo
           </a>
         </div>
       </div>
