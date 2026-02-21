@@ -1,9 +1,10 @@
 import AboutMe from "@/components/AboutMe";
 import Card from "@/components/Card";
 import Container from "@/components/Container";
+import Footer from "@/components/Footer";
 import Section from "@/components/Section";
 
-export default function En() {
+export default function Page() {
   return (
     <main className="bg-[#0b0f1a] text-white overflow-x-hidden">
       {/* HERO */}
@@ -73,9 +74,7 @@ export default function En() {
         </defs>
       </svg>
 
-      <footer className="relative w-screen h-screen bg-[linear-gradient(90deg,#8B2EF5_0%,#0B0F1A_100%)]">
-        awda
-      </footer>
+      <Footer />
     </main>
   );
 }
