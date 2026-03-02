@@ -1,4 +1,46 @@
 {
-  "welcome": "Bem-vindo ao meu portfólio",
-  "description": "Sou desenvolvedor Fullstack."
+  "section": {
+    "welcome": "Bem-vindo ao meu Portfólio.",
+    "role": "Eu sou Desenvolvedor Full-Stack",
+    "description": "Eu construo aplicações modernas com foco em performance e experiência.",
+    "btnAbout": "Sobre Mim",
+    "btnContact": "Contato"
+  },
+  "projects": {
+    "title": "Meus Projetos",
+    "pomodoro": "Loja Virtual completa com carrinho, pagamento e painel de administrador.",
+    "notes": "Aplicação de gerenciamento de tarefas com autenticação JWT.",
+    "stranger": "Painel com gráficos dinâmicos e consumo de API REST.",
+    "bmw": "Painel com gráficos dinâmicos e consumo de API REST."
+  },
+  "about": {
+    "badge": "Minha História",
+    "p1": {
+      "part1": "Sou um desenvolvedor Full-Stack apaixonado por transformar ideias complexas em interfaces",
+      "highlight": "intuitivas e escaláveis",
+      "part2": ". Meu foco principal é arquitetar aplicações onde a",
+      "perf": "performance",
+      "and": "e a",
+      "ux": "experiência do usuário",
+      "part3": "caminham juntas, garantindo que cada interação seja fluida e cada milissegundo seja otimizado."
+    },
+    "p2": {
+      "part1": "Minha jornada no desenvolvimento é guiada pela curiosidade técnica e pelo compromisso com a qualidade do código. Atualmente, foco meu trabalho no ecossistema",
+      "tech": "React e Next.js",
+      "part2": ", dominando ferramentas de ponta para criar layouts imersivos que desafiam o comum."
+    },
+    "p3": {
+      "part1": "Além do código, prezo pela",
+      "maint": "manutenibilidade",
+      "and": "e pela",
+      "scal": "escalabilidade",
+      "part2": ". Acredito firmemente que o sucesso de um produto digital nasce na intersecção entre uma lógica de back-end robusta, bancos de dados bem estruturados e um front-end que respira inovação. Estou sempre em busca do próximo desafio que me permita elevar o nível do que é possível construir na web."
+    }
+  },
+  "footer": {
+    "projects": "Projetos",
+    "curriculum": "Currículo",
+    "LinkedIn": "LinkedIn",
+    "contact": "Contato"
+  }
 }

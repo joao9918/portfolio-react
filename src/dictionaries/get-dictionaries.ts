@@ -5,6 +5,6 @@ const dictionaries = {
   en: () => import("./en.json").then((module) => module.default),
 };
 
-export const getDictionary = async (locale: "pt" | "en") => {
+export const getDictionary = async (locale: "pt" | "en"): Promise<any> => {
   return dictionaries[locale]();
 };

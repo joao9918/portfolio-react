@@ -1,7 +1,18 @@
 "use client";
 import { useRef } from "react";
+import { scrollToAbout } from "../../utils/ScrollToAbout";
 
-export default function Section() {
+interface SectionProps {
+  dict: {
+    welcome: string;
+    role: string;
+    description: string;
+    btnAbout: string;
+    btnContact: string;
+  };
+}
+
+export default function Section({ dict }: SectionProps) {
   const sectionRef = useRef<HTMLElement>(null);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLElement>) => {
@@ -14,13 +25,6 @@ export default function Section() {
     sectionRef.current?.style.setProperty("--x", `${x}%`);
     sectionRef.current?.style.setProperty("--y", `${y}%`);
   };
-
-  function scrollToAbout(id: string) {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  }
 
   return (
     <section
@@ -38,15 +42,15 @@ export default function Section() {
       />
 
       <p className="cursor-default relative z-10 mt-4 font-light opacity-80">
-        Welcome to My Portfolio.
+        {dict.welcome}
       </p>
 
       <h1 className="cursor-default relative z-10 font-bold text-[clamp(2.5rem,6vw,4rem)]">
-        I&apos;m a Full-Stack Developer
+        {dict.role}
       </h1>
 
       <p className="cursor-default relative z-10 mt-4 font-light opacity-80">
-        I build modern applications with a focus on performance and experience.
+        {dict.description}
       </p>
 
       <div className="relative z-10 mt-8 flex gap-4 flex-wrap justify-center">
@@ -54,11 +58,14 @@ export default function Section() {
           onClick={() => scrollToAbout("about-me")}
           className="cursor-pointer px-6 py-3 rounded-full font-medium transition hover:-translate-y-1 bg-linear-to-r from-blue-500 to-purple-600"
         >
-          About Me
+          {dict.btnAbout}
         </button>
 
-        <button className="cursor-pointer px-6 py-3 rounded-full font-medium border border-white/20 transition hover:-translate-y-1">
-          Contact
+        <button
+          onClick={() => scrollToAbout("footer")}
+          className="cursor-pointer px-6 py-3 rounded-full font-medium border border-white/20 transition hover:-translate-y-1"
+        >
+          {dict.btnContact}
         </button>
       </div>
     </section>

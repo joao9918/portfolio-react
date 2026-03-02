@@ -1,14 +1,23 @@
+import { AnchorHTMLAttributes } from "react";
 import { GoArrowUpRight } from "react-icons/go";
 
-type LinkFooterProps = {
+type LinkFooterProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
   title: string;
+  onClick?: () => void;
 };
 
-export default function LinkFooter({ title }: LinkFooterProps) {
+export default function LinkFooter({
+  title,
+  onClick,
+  href,
+  ...props
+}: LinkFooterProps) {
   return (
     <a
-      className="border-b text-[#ffffff4f] border-b-[#ffffff4f] hover:text-white transition py-6 text-3xl flex justify-between items-center"
-      href=""
+      onClick={onClick}
+      className="text-xl border-b text-[#ffffff4f] border-b-[#ffffff4f] hover:text-white transition py-6 lg:text-3xl flex justify-between items-center cursor-pointer"
+      href={href}
+      {...props}
     >
       {title} <GoArrowUpRight />
     </a>

@@ -1,3 +1,5 @@
+"use client";
+
 import clsx from "clsx";
 import {
   SiReact,
@@ -10,7 +12,35 @@ import {
   SiFramer,
 } from "react-icons/si";
 
-export default function AboutMe() {
+// Interface detalhada para bater com a estrutura do seu JSON
+interface AboutMeProps {
+  dict: {
+    badge: string;
+    p1: {
+      part1: string;
+      highlight: string;
+      part2: string;
+      perf: string;
+      and: string;
+      ux: string;
+      part3: string;
+    };
+    p2: {
+      part1: string;
+      tech: string;
+      part2: string;
+    };
+    p3: {
+      part1: string;
+      maint: string;
+      and: string;
+      scal: string;
+      part2: string;
+    };
+  };
+}
+
+export default function AboutMe({ dict }: AboutMeProps) {
   const techs = [
     { name: "React", icon: <SiReact className="text-[#61DAFB]" /> },
     { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
@@ -25,56 +55,51 @@ export default function AboutMe() {
   return (
     <section className="relative py-4 px-6 md:px-12 lg:px-24 w-full h-full">
       <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
-        {/* Coluna do Texto */}
+        {/* Coluna do Texto Traduzido */}
         <div className="flex-1">
           <div className="flex items-center gap-4 mb-6">
             <span className="h-px w-12 bg-purple-500" />
             <span className="text-xs font-mono tracking-[0.4em] text-purple-500 uppercase">
-              Minha História
+              {dict.badge}
             </span>
           </div>
 
           <div className="space-y-8 text-gray-400 text-lg md:text-xl leading-relaxed font-light max-w-4xl relative z-10">
+            {/* Parágrafo 1 */}
             <p>
-              Sou um desenvolvedor Full-Stack apaixonado por transformar ideias
-              complexas em interfaces{" "}
+              {dict.p1.part1}{" "}
               <span className="text-white border-b border-blue-500/30">
-                intuitivas e escaláveis
+                {dict.p1.highlight}
               </span>
-              . Meu foco principal é arquitetar aplicações onde a
-              <span className="text-white font-medium"> performance</span> bruta
-              e a{" "}
+              {dict.p1.part2}
               <span className="text-white font-medium">
-                experiência do usuário{" "}
-              </span>
-              caminham juntas, garantindo que cada interação seja fluida e cada
-              milissegundo seja otimizado.
+                {" "}
+                {dict.p1.perf}
+              </span>{" "}
+              {dict.p1.and}{" "}
+              <span className="text-white font-medium">{dict.p1.ux} </span>
+              {dict.p1.part3}
             </p>
 
+            {/* Parágrafo 2 */}
             <p>
-              Minha jornada no desenvolvimento é guiada pela curiosidade técnica
-              e pelo compromisso com a qualidade do código. Atualmente, foco meu
-              trabalho no ecossistema{" "}
-              <span className="text-blue-400">React e Next.js</span>, dominando
-              ferramentas de ponta para criar layouts imersivos que desafiam o
-              comum.
+              {dict.p2.part1}{" "}
+              <span className="text-blue-400">{dict.p2.tech}</span>
+              {dict.p2.part2}
             </p>
 
+            {/* Parágrafo 3 */}
             <p>
-              Além do código, prezo pela{" "}
-              <span className="text-purple-400 italic">manutenibilidade</span> e
-              pela
-              <span className="text-purple-400 italic"> escalabilidade</span>.
-              Acredito firmemente que o sucesso de um produto digital nasce na
-              intersecção entre uma lógica de back-end robusta, bancos de dados
-              bem estruturados e um front-end que respira inovação. Estou sempre
-              em busca do próximo desafio que me permita elevar o nível do que é
-              possível construir na web.
+              {dict.p3.part1}{" "}
+              <span className="text-purple-400 italic">{dict.p3.maint}</span>{" "}
+              {dict.p3.and}{" "}
+              <span className="text-purple-400 italic">{dict.p3.scal}</span>.
+              {dict.p3.part2}
             </p>
           </div>
         </div>
 
-        {/* Coluna das Tecnologias */}
+        {/* Coluna das Tecnologias (Mantida fixa pois nomes de tech não mudam) */}
         <div className="flex-1 w-full">
           <h3 className="text-sm font-mono text-white/30 uppercase tracking-[0.3em] mb-10">
             Main Stack // Techs
@@ -85,22 +110,8 @@ export default function AboutMe() {
               <div
                 key={tech.name}
                 className={clsx(
-                  "group",
-                  "flex",
-                  "flex-col",
-                  "items-center",
-                  "justify-center",
-                  "p-6",
-                  "rounded-2xl",
-                  "border",
-                  "border-white/5",
-                  "bg-white/2",
-                  "backdrop-blur-sm",
-                  "transition-all",
-                  "duration-300",
-                  "hover:bg-white/5",
-                  "hover:border-white/20",
-                  "hover:-translate-y-1",
+                  "group flex flex-col items-center justify-center p-6 rounded-2xl border border-white/5 bg-white/2 backdrop-blur-sm transition-all duration-300",
+                  "hover:bg-white/5 hover:border-white/20 hover:-translate-y-1",
                 )}
               >
                 <div className="text-4xl mb-3 transition-transform duration-300 group-hover:scale-110">

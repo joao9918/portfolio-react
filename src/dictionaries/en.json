@@ -1,4 +1,46 @@
 {
-  "welcome": "Welcome to my portfolio",
-  "description": "I am a Fullstack developer."
+  "section": {
+    "welcome": "Welcome to My Portfolio.",
+    "role": "I'm a Full-Stack Developer",
+    "description": "I build modern applications with a focus on performance and experience.",
+    "btnAbout": "About Me",
+    "btnContact": "Contact"
+  },
+  "projects": {
+    "title": "My Projects",
+    "pomodoro": "Virtual Store complete with shopping cart, payment and admin panel.",
+    "notes": "Task management application with JWT authentication.",
+    "stranger": "Dashboard with dynamic charts and REST API consumption.",
+    "bmw": "Dashboard with dynamic charts and REST API consumption."
+  },
+  "about": {
+    "badge": "My Story",
+    "p1": {
+      "part1": "I am a Full-Stack developer passionate about transforming complex ideas into",
+      "highlight": "intuitive and scalable",
+      "part2": "interfaces. My main focus is architecting applications where raw",
+      "perf": "performance",
+      "and": "and",
+      "ux": "user experience",
+      "part3": "go hand in hand, ensuring every interaction is fluid and every millisecond is optimized."
+    },
+    "p2": {
+      "part1": "My development journey is guided by technical curiosity and a commitment to code quality. Currently, I focus my work on the",
+      "tech": "React and Next.js",
+      "part2": "ecosystem, mastering cutting-edge tools to create immersive layouts that defy the ordinary."
+    },
+    "p3": {
+      "part1": "Beyond code, I value",
+      "maint": "maintainability",
+      "and": "and",
+      "scal": "scalability",
+      "part2": ". I firmly believe that the success of a digital product is born at the intersection of robust back-end logic, well-structured databases, and a front-end that breathes innovation. I am always looking for the next challenge that allows me to raise the bar of what is possible to build on the web."
+    }
+  },
+  "footer": {
+    "projects": "Projects",
+    "curriculum": "Curriculum",
+    "LinkedIn": "LinkedIn",
+    "contact": "Contact"
+  }
 }
