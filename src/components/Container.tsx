@@ -15,7 +15,6 @@ export default function Container({
 }: ContainerProps) {
   return (
     <section id={id} className="relative py-24 px-6 md:px-12 lg:px-24 w-full">
-      {/* Cabeçalho */}
       <div className="relative mb-16 w-full">
         <div className="flex items-center gap-4 mb-4">
           <span className="h-px w-12 bg-blue-500" />
@@ -29,7 +28,6 @@ export default function Container({
         </h2>
       </div>
 
-      {/* Grid Ajustado: 1 col no mobile, 2 col no desktop */}
       <div
         className={clsx(
           "grid",

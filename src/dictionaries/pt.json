@@ -8,10 +8,10 @@
   },
   "projects": {
     "title": "Meus Projetos",
-    "pomodoro": "Loja Virtual completa com carrinho, pagamento e painel de administrador.",
-    "notes": "Aplicação de gerenciamento de tarefas com autenticação JWT.",
-    "stranger": "Painel com gráficos dinâmicos e consumo de API REST.",
-    "bmw": "Painel com gráficos dinâmicos e consumo de API REST."
+    "pomodoro": "Timer de produtividade focado na técnica Pomodoro com interface intuitiva.",
+    "notes": "Sistema para organização de notas e lembretes com interface limpa e funcional.",
+    "stranger": "Landing page temática com animações avançadas e design imersivo.",
+    "bmw": "Interface de showcase automotivo com foco em estética e interatividade visual."
   },
   "about": {
     "badge": "Minha História",

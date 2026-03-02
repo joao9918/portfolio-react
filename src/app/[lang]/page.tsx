@@ -35,8 +35,8 @@ export default async function Page({
           title="Stranger Things"
           description={dict.projects.stranger}
           image="stranger-things.png"
-          githubUrl="#"
-          liveUrl="#"
+          githubUrl="https://github.com/joao9918/project-stranger-things"
+          liveUrl="https://stranger-things-beige.vercel.app/"
         />
         <Card
           title="Notes Tracker"

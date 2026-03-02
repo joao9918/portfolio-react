@@ -8,10 +8,10 @@
   },
   "projects": {
     "title": "My Projects",
-    "pomodoro": "Virtual Store complete with shopping cart, payment and admin panel.",
-    "notes": "Task management application with JWT authentication.",
-    "stranger": "Dashboard with dynamic charts and REST API consumption.",
-    "bmw": "Dashboard with dynamic charts and REST API consumption."
+    "pomodoro": "Productivity timer based on the Pomodoro technique with an intuitive interface.",
+    "notes": "A streamlined system for organizing notes and reminders with a functional UI.",
+    "stranger": "Themed landing page featuring advanced animations and immersive design.",
+    "bmw": "Automotive showcase interface focusing on aesthetics and visual interactivity."
   },
   "about": {
     "badge": "My Story",

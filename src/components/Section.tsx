@@ -31,9 +31,9 @@ export default function Section({ dict }: SectionProps) {
       ref={sectionRef}
       onMouseMove={handleMouseMove}
       style={{ "--x": "50%", "--y": "50%" } as React.CSSProperties}
-      className="relative min-h-140 lg:min-h-266 flex flex-col justify-center items-center text-center px-6 overflow-hidden bg-[#0b0f1a] text-white"
+      className="relative min-h-170 lg:min-h-266 flex flex-col justify-center items-center text-center px-6 overflow-hidden bg-[#0b0f1a] text-white"
     >
-      {/* Glow Effect - Corrigido */}
+      {/* Glow Effect*/}
       <div
         className="absolute inset-0 pointer-events-none transition-[background] duration-200"
         style={{
