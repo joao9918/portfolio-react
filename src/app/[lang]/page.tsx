@@ -1,5 +1,5 @@
 import AboutMe from "@/components/AboutMe";
-import AnimatedCard from "@/components/AnimatedCard";
+import AnimatedCard from "@/components/gsap/AnimatedCard";
 import Card from "@/components/Card";
 import Container from "@/components/Container";
 import Footer from "@/components/Footer";
