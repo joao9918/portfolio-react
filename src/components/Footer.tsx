@@ -20,7 +20,7 @@ export default function Footer({ dict }: FooterProps) {
     <>
       <svg
         viewBox="0 0 1441 293"
-        className="w-full h-auto hidden lg:block relative top-1"
+        className="w-full h-auto hidden lg:block relative top-2"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -48,14 +48,7 @@ export default function Footer({ dict }: FooterProps) {
         id="footer"
       >
         <div>
-          <Image
-            className="cursor-pointer hover:brightness-90"
-            onClick={() => scrollToAbout("hero")}
-            src="/JS.png"
-            alt="JS Image"
-            width={250}
-            height={250}
-          />
+          <Image src="/JS.png" alt="JS Image" width={250} height={250} />
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4">
           <div className="flex flex-col mb-8 ">
