@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import TextReveal from "./gsap/TextReveal";
 
 type ContainerProps = {
   title: string;
@@ -23,9 +24,11 @@ export default function Container({
           </span>
         </div>
 
-        <h2 className="text-5xl md:text-7xl font-black tracking-tighter text-white italic uppercase border-b border-white/5 pb-10">
-          {title}
-        </h2>
+        <TextReveal className="block">
+          <h2 className="text-5xl md:text-7xl font-black tracking-tighter text-white italic uppercase border-b border-white/5 pb-10">
+            {title}
+          </h2>
+        </TextReveal>
       </div>
 
       <div

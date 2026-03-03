@@ -43,7 +43,7 @@ export default async function Page({
             liveUrl="https://stranger-things-beige.vercel.app/"
           />
         </AnimatedCard>
-        <AnimatedCard y={200} start="top 40%" end="top 60%">
+        <AnimatedCard y={200} start="top 45%" end="top 60%">
           <Card
             title="Notes Tracker"
             description={dict.projects.notes}
@@ -64,13 +64,7 @@ export default async function Page({
       </Container>
 
       {/* ABOUT ME */}
-      <Container
-        title={dict.about.title}
-        id="about-me"
-        gridCols={"md:grid-cols-1"}
-      >
-        <AboutMe dict={dict.about} />
-      </Container>
+      <AboutMe dict={dict.about} />
 
       {/* SVG DECORATIVO */}
 

@@ -14,27 +14,27 @@
     "bmw": "Automotive showcase interface focusing on aesthetics and visual interactivity."
   },
   "about": {
-    "badge": "My Story",
+    "badge": "About Me",
     "p1": {
-      "part1": "I am a Full-Stack developer passionate about transforming complex ideas into",
+      "part1": "I’m a Full-Stack developer passionate about turning complex ideas into",
       "highlight": "intuitive and scalable",
-      "part2": "interfaces. My main focus is architecting applications where raw",
+      "part2": " interfaces. My focus is building applications where",
       "perf": "performance",
       "and": "and",
       "ux": "user experience",
-      "part3": "go hand in hand, ensuring every interaction is fluid and every millisecond is optimized."
+      "part3": "go hand in hand, ensuring smooth and efficient interactions."
     },
     "p2": {
-      "part1": "My development journey is guided by technical curiosity and a commitment to code quality. Currently, I focus my work on the",
+      "part1": "My journey is driven by technical curiosity and a strong commitment to quality. Currently, I work within the",
       "tech": "React and Next.js",
-      "part2": "ecosystem, mastering cutting-edge tools to create immersive layouts that defy the ordinary."
+      "part2": " ecosystem, leveraging modern tools to craft immersive experiences."
     },
     "p3": {
-      "part1": "Beyond code, I value",
+      "part1": "I value",
       "maint": "maintainability",
       "and": "and",
       "scal": "scalability",
-      "part2": ". I firmly believe that the success of a digital product is born at the intersection of robust back-end logic, well-structured databases, and a front-end that breathes innovation. I am always looking for the next challenge that allows me to raise the bar of what is possible to build on the web."
+      "part2": ". I believe great digital products are built at the intersection of solid back-end logic, well-structured data, and an innovative front-end."
     }
   },
   "footer": {

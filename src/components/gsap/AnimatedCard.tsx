@@ -10,6 +10,7 @@ type AnimatedCardProps = {
   y?: number;
   start?: string;
   end?: string;
+  markers?: boolean;
 };
 
 export default function AnimatedCard({
@@ -18,6 +19,7 @@ export default function AnimatedCard({
   y = 0,
   start = "0% 100%",
   end = "100% 0%",
+  markers = false,
 }: AnimatedCardProps) {
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -45,6 +47,7 @@ export default function AnimatedCard({
             start: start,
             end: end,
             toggleActions: "play none none reverse",
+            markers: markers,
           },
         },
       );

@@ -14,7 +14,7 @@ export default function ScrollSmootherComponent({
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
     ScrollSmoother.create({
-      smooth: 1.5,
+      smooth: 0.8,
       effects: true,
       smoothTouch: 0.1,
     });

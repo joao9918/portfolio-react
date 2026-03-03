@@ -1,6 +1,7 @@
 "use client";
 import { useRef, useEffect } from "react";
 import { scrollToAbout } from "../../utils/ScrollToAbout";
+import TextReveal from "./gsap/TextReveal";
 
 interface SectionProps {
   dict: {
@@ -43,7 +44,10 @@ export default function Section({ dict }: SectionProps) {
   }, []);
 
   return (
-    <section className="relative min-h-140 lg:min-h-266 flex flex-col justify-center items-center text-center px-6 overflow-hidden bg-[#0b0f1a] text-white">
+    <section
+      id="hero"
+      className="relative min-h-140 lg:min-h-266 flex flex-col justify-center items-center text-center px-6 overflow-hidden bg-[#0b0f1a] text-white"
+    >
       <canvas ref={canvasRef} className="absolute inset-0 z-0 w-full h-full" />
 
       <div className="relative z-10 pointer-events-none flex flex-col items-center">
@@ -51,9 +55,11 @@ export default function Section({ dict }: SectionProps) {
           {dict.welcome}
         </p>
 
-        <h1 className="font-bold text-[clamp(2.5rem,6vw,4rem)] leading-tight">
-          {dict.role}
-        </h1>
+        <TextReveal className="block">
+          <h1 className="font-bold text-[clamp(2.5rem,6vw,5rem)] leading-tight text-white/75">
+            {dict.role}
+          </h1>
+        </TextReveal>
 
         <p className="mt-4 font-light opacity-80 max-w-2xl mx-auto">
           {dict.description}
