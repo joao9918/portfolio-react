@@ -1,5 +1,6 @@
 import { Poppins } from "next/font/google";
 import "@/app/globals.css";
+import ScrollSmootherComponent from "@/components/ScrollSmootherComponent";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -14,7 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={poppins.variable}>{children}</body>
+      <body className={poppins.variable}>
+        <ScrollSmootherComponent>{children}</ScrollSmootherComponent>
+      </body>
     </html>
   );
 }

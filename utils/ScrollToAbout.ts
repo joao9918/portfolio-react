@@ -1,6 +1,9 @@
+import { ScrollSmoother } from "gsap/ScrollSmoother";
+
 export function scrollToAbout(id: string) {
-  const element = document.getElementById(id);
-  if (element) {
-    element.scrollIntoView({ behavior: "smooth" });
+  const smoother = ScrollSmoother.get();
+
+  if (smoother) {
+    smoother.scrollTo(`#${id}`, true);
   }
 }
