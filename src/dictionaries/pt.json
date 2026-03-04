@@ -42,5 +42,8 @@
     "curriculum": "Currículo",
     "LinkedIn": "LinkedIn",
     "contact": "Contato"
+  },
+  "preloader": {
+    "loading": "CARREGANDO..."
   }
 }

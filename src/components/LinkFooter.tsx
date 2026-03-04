@@ -15,7 +15,7 @@ export default function LinkFooter({
   return (
     <a
       onClick={onClick}
-      className="text-xl border-b text-[#ffffff4f] border-b-[#ffffff4f] hover:text-white transition py-6 lg:text-3xl flex justify-between items-center cursor-pointer"
+      className="text-xl border-b hover:-translate-y-1 text-[#ffffff4f] border-b-[#ffffff4f] hover:text-white transition py-6 lg:text-3xl flex justify-between items-center cursor-pointer"
       href={href}
       {...props}
     >

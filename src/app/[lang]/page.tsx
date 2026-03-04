@@ -5,6 +5,7 @@ import Container from "@/components/Container";
 import Footer from "@/components/Footer";
 import Section from "@/components/Section";
 import { getDictionary } from "@/dictionaries/get-dictionaries";
+import PreLoader from "@/components/gsap/PreLoader";
 
 export default async function Page({
   params,
@@ -66,9 +67,9 @@ export default async function Page({
       {/* ABOUT ME */}
       <AboutMe dict={dict.about} />
 
-      {/* SVG DECORATIVO */}
-
       <Footer dict={dict.footer} />
+
+      <PreLoader dict={dict.preloader} />
     </main>
   );
 }

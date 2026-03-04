@@ -129,7 +129,7 @@ export default function AboutMe({ dict }: any) {
     >
       <div
         ref={headerRef}
-        className="px-[10vw] pt-20 mb-10 will-change-transform"
+        className="px-[10vw] md:pt-20 mb-10 will-change-transform"
       >
         <div className="flex items-center gap-4 mb-6">
           <span className="h-px w-12 bg-blue-500" />
@@ -149,7 +149,7 @@ export default function AboutMe({ dict }: any) {
         className="flex items-center w-max px-[10vw] gap-[12vw] pb-20 will-change-transform"
       >
         <div className="w-[85vw] md:w-125 shrink-0">
-          <div className="space-y-8 text-gray-400 text-lg md:text-xl leading-relaxed font-light">
+          <div className="space-y-8 text-gray-400 text-md md:text-xl leading-relaxed font-light">
             <p>
               {dict.p1.part1}{" "}
               <span className="text-white border-b border-blue-500/30">
