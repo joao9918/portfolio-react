@@ -55,7 +55,7 @@ export default function Section({ dict }: SectionProps) {
           {dict.welcome}
         </p>
 
-        <TextReveal className="block">
+        <TextReveal className="block" delay={2}>
           <h1 className="font-bold text-[clamp(2.5rem,6vw,5rem)] leading-tight text-white/75">
             {dict.role}
           </h1>
