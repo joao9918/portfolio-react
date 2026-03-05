@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={poppins.variable}>
+      <body className={poppins.variable} suppressHydrationWarning={true}>
         <ScrollSmootherComponent>
           <SmoothScroll>{children}</SmoothScroll>
         </ScrollSmootherComponent>
