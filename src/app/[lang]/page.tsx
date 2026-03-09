@@ -58,8 +58,8 @@ export default async function Page({
             title="BMW"
             description={dict.projects.bmw}
             image="project-bmw.png"
-            githubUrl="#"
-            liveUrl="#"
+            githubUrl="https://github.com/joao9918/project-bmw"
+            liveUrl="https://project-bmw.vercel.app/"
           />
         </AnimatedCard>
       </Container>
