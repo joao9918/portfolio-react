@@ -10,6 +10,7 @@ type Dictionary = {
   curriculum: string;
   LinkedIn: string;
   contact: string;
+  contactULR: string;
   CurriculumURL: string;
 };
 
@@ -80,7 +81,7 @@ export default function Footer({ dict }: FooterProps) {
           <div className="flex flex-col mb-8 lg:col-start-3">
             <span>INFO</span>
             <LinkFooter
-              href="https://wa.me/5519989331359?text=Ol%C3%A1!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20me%20conectar%20para%20conversarmos%20sobre%20tecnologia%20e%20desenvolvimento."
+              href={dict.contactULR}
               title={dict.contact}
               target="_blank"
             />
