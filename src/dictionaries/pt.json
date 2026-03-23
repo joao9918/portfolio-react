@@ -41,7 +41,8 @@
     "projects": "Projetos",
     "curriculum": "Currículo",
     "LinkedIn": "LinkedIn",
-    "contact": "Contato"
+    "contact": "Contato",
+    "CurriculumURL": "/Curriculum_pt.pdf"
   },
   "preloader": {
     "loading": "CARREGANDO..."

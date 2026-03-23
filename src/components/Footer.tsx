@@ -3,13 +3,14 @@ import Image from "next/image";
 import LinkFooter from "./LinkFooter";
 import gsap from "gsap";
 import { useEffect } from "react";
-import { scrollToAbout } from "../../utils/ScrollToAbout";
+import { scrollToAbout } from "../utils/ScrollToAbout";
 
 type Dictionary = {
   projects: string;
   curriculum: string;
   LinkedIn: string;
   contact: string;
+  CurriculumURL: string;
 };
 
 type FooterProps = {
@@ -70,7 +71,11 @@ export default function Footer({ dict }: FooterProps) {
               title={dict.projects}
               onClick={() => scrollToAbout("projects")}
             />
-            <LinkFooter title={dict.curriculum} />
+            <LinkFooter
+              href={dict.CurriculumURL}
+              target="_blank"
+              title={dict.curriculum}
+            />
           </div>
           <div className="flex flex-col mb-8 lg:col-start-3">
             <span>INFO</span>

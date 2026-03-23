@@ -1,6 +1,6 @@
 "use client";
 import { useRef, useEffect } from "react";
-import { scrollToAbout } from "../../utils/ScrollToAbout";
+import { scrollToAbout } from "../utils/ScrollToAbout";
 import TextReveal from "./gsap/TextReveal";
 
 interface SectionProps {
