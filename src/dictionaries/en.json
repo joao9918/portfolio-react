@@ -1,4 +1,10 @@
 {
+  "metadata": {
+    "title": "João Santos | Full Stack Developer",
+    "description": "João Santos Portfolio - Projects, technologies, and contact."
+  },
+  "title": "João Santos | Full Stack Developer",
+  "description": "Portfólio de João Santos - Projetos, tecnologias e contato.",
   "section": {
     "welcome": "Welcome to My Portfolio.",
     "role": "I'm a Full-Stack Developer",
